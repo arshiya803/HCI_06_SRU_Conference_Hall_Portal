@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("sru.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+body {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* about logo */
+.container {
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 800px;
+}
+
+.Tier-logo {
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    margin-right: 900px;
+    width: 120px;
+    height: 100px;
+}
+
+.nirf-logo {
+    border-radius: 15%;
+    margin-bottom: 30px;
+    margin-right: 990px;
+    width: 100px;
+}
+
+.timeshigher-logo {
+    border-radius: 5%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 300px;
+}
+
+
+.arria-logo {
+    border-radius: 15%;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 100px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hybrid {
+    background-color: rgba(0, 128, 0, 0.8);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #ff5c5c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d9534f;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin: 20px 0;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar-list li {
+    display: inline-block;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-list a:hover {
+    color: #007BFF;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: black;
+    font-size: 1rem;
+}
+
+.dropdown-menu li a:hover {
+    color: #007BFF;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.plus {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    border-left-width: 50%;
+    margin: 10px auto;
+}
+
+/* submission-section */
+.submission {
+    /* max-width: 800px; */
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.submission-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #34495e;
+}
+
+.submission-info {
+    background-color: #f9f9c5;
+    border-left: 5px solid #f1c40f;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.submission-info a {
+    color: #e67e22;
+    text-decoration: none;
+}
+
+.submission-info a:hover {
+    text-decoration: underline;
+}
+
+.notice {
+    font-family: 'Brush Script MT', cursive;
+    font-size: 1.25rem;
+    font-style: italic;
+    margin: 15px 0;
+    color: #7f8c8d;
+}
+
+h3 {
+    margin: 20px 0 10px;
+    color: #34495e;
+}
+
+ul.formatting-guidelines {
+    list-style: disc inside;
+    padding-left: 20px;
+}
+
+ul.formatting-guidelines li {
+    margin-bottom: 10px;
+}
+
+.pp-temp {
+    display: flex;
+    font-size: 1.4rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.paper-template {
+    width: 35%;
+    margin-top: 20px;
+    background-color: #fcfcd8;
+    border-left: 5px solid #f1c40f;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.template-links a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007BFF;
+}
+
+.template-links a:hover {
+    text-decoration: underline;
+}
+
+.review-process {
+    margin-bottom: 30px;
+}
+
+
+.review-process h2{
+    display: flex;
+}
+
+.review-process ul {
+    list-style: disc inside;
+    padding-left: 20px;
+    margin: 20px 0;
+}
+
+.note {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-top: 10px;
+}

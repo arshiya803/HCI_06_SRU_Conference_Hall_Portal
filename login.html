@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-image: url(sru.png);
+            background-repeat: no-repeat;
+            background-size: cover ;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f3f4f6;
+        }
+
+        .login-container {
+            background: rgba(232, 254, 251, 0.95);
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4a90e2;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .login-btn:hover {
+            background-color: #357ab8;
+        }
+
+        .message {
+            margin-top: 15px;
+            font-size: 0.9rem;
+            color: red;
+        }
+    </style>
+    <script>
+        const validCredentials = {
+            username: "2303A51389",
+            password: "Student@2023"
+        };
+
+        function handleLogin(event) {
+            event.preventDefault();
+
+            const x = document.getElementById("username").value;
+            const y = document.getElementById("password").value;
+
+
+            if (!x || !y) {
+                alert("Please fill in both fields.");
+                return;
+            }
+
+            if (x === validCredentials.username && y === validCredentials.password) {
+                window.location.href = "index.html";
+            } else {
+                alert("Enter valid credentials");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="login-container">
+        <h1>Login</h1>
+        <form id="loginForm"  onsubmit="handleLogin(event)">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" required>
+                <br><br>
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required><br><br>
+            <button type="submit" class="login-btn">Login</button>
+            </div>
+            <p class="message" id="message"></p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

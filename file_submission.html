@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Paper</title>
+    <style>
+        body {
+            background-image: url(sru.png);
+            background-repeat: no-repeat;
+            background-size: cover ;
+            background-position: center;
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: rgba(232, 254, 251, 0.95);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+            text-align: center;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        input {
+            margin-bottom: 15px;
+            font-size: 1rem;
+        }
+
+        button {
+            background-color: #4a90e2;
+            border: none;
+            padding: 10px 30px;
+            color: white;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ab8;
+        }
+
+        .success-message {
+            margin-top: 20px;
+            color: green;
+            font-size: 1.2rem;
+            display: none;
+        }
+    </style>
+    <script>
+        function handleLogin(event){
+            event.preventDefault();
+
+            const fileInput = document.getElementById("1");
+            if (fileInput.files.length === 0) {
+                alert("Please select a file to upload.");
+                return;
+            }
+
+            const successMessage = document.getElementById("successMessage");
+            successMessage.style.display = "block";
+
+            fileInput.value = "";
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Submit Your Paper</h1>
+        <form id="paperForm" onsubmit="handleLogin(event)">
+            <input type="file" name="paper" id="1" required>
+            <br>
+            <button type="submit">Submit</button>
+        </form>
+        <p class="success-message" id="successMessage">Your paper has been successfully submitted!</p>
+    </div>
+
+   
+</body>
+
+</html>

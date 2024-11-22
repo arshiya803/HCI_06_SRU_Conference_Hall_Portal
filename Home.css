@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    font-family: 'Arial', sans-serif;
+    background-image: url("sru.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+body {
+    background-color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+/* about logo */
+.container {
+    text-align: center;
+    color: white;
+    position: relative;
+    max-width: 800px;
+}
+
+.Tier-logo {
+    border-radius: 15%;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    margin-right: 900px;
+    width: 120px;
+    height: 100px;
+}
+
+.nirf-logo {
+    border-radius: 15%;
+    margin-bottom: 30px;
+    margin-right: 990px;
+    width: 100px;
+}
+
+.timeshigher-logo {
+    border-radius: 5%;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    width: 300px;
+}
+
+
+.arria-logo {
+    border-radius: 15%;
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    width: 100px;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hybrid {
+    background-color: rgba(0, 128, 0, 0.8);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.button {
+    margin-top: 50px;
+}
+
+.button {
+    text-decoration: none;
+    background-color: #ff5c5c;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #d9534f;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin: 20px 0;
+}
+
+.navbar-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navbar ul li {
+    margin: 0 15px;
+}
+
+.navbar-list li {
+    display: inline-block;
+}
+
+.navbar-list a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-list a:hover {
+    color: #007BFF;
+}
+
+/* Dropdown Menu */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: white;
+    border: 1px solid #ccc;
+    min-width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-menu li {
+    list-style-type: none;
+    padding: 10px;
+    text-align: left;
+}
+
+.dropdown-menu li a {
+    color: black;
+    font-size: 1rem;
+}
+
+.dropdown-menu li a:hover {
+    color: #007BFF;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.plus {
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.divider {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin-top: 10px;
+    border-left-width: 50%;
+    margin: 10px auto;
+}
+
+
+
+/* Submit Button */
+.submit-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.submit-button {
+    background-color: white;
+    text-decoration: none;
+    color: red;
+    border: 2px solid red;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.submit-button:hover {
+    background-color: red;
+    color: white;
+}
+
+/* Important Dates Section */
+.important-dates-section {
+    text-align: center;
+    color: black;
+    margin: 50px auto;
+    width: 95%;
+    max-width: 100%;
+}
+
+.important-dates-section h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    text-align: left;
+    font-size: 18px;
+    background-color: #ffffff;
+}
+
+thead th {
+    background-color: #d9f2d9;
+    height: 50px;
+}
+
+tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+
+td {
+    padding: 15px;
+}
+
+td:nth-child(2) {
+    text-align: center;
+    font-weight: bold;
+    border-left: 2px solid #dddddd;
+}
+
+/* welcome-section */
+
+.welcome-section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.welcome-section h1 {
+    display: flex;
+    align-self:flex-start;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.welcome-section p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+}
+
+/* University-section */
+
+.University-section{
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.University-section h1 {
+    display: flex;
+    align-self:flex-start;
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.University-section p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 20px;
+}
